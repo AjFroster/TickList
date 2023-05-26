@@ -11,7 +11,7 @@ app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 });
 
-app.use('/static', express.static(path.join(__dirname, 'TickList')));
+app.use(express.static(path.join(__dirname)));
 app.use('/static', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
 
 // Serve the HTML file
